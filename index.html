@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="qwerty">
+      <div class="container">
+        <img
+          src="https://aer.eu/wp-content/uploads/2017/06/twitter-logo-4.png"
+          alt=""
+          class="logo"
+        />
+        <nav>
+          <a href="">link 1</a>
+          <a href="">link 2</a>
+          <a href="">link 3</a>
+          <a href="">link 4</a>
+          <a href="">link 5</a>
+        </nav>
+        <div class="phone_btn" onclick="toggleMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div>
+        <h1>Hello world</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+          voluptas!
+        </p>
+      </div>
+    </div>
+
+    <picture>
+      <source media="(min-width: 1024px)" srcset="img/product2.png" />
+      <source
+        media="(max-width:768px)"
+        srcset="https://aer.eu/wp-content/uploads/2017/06/twitter-logo-4.png"
+      />
+      <source media="(max-width:1024px)" srcset="img/product1.png" />
+      <img
+        src="img/product3.png"
+        alt="Chris standing up holding his daughter Elva"
+      />
+    </picture>
+
+    <script>
+      function toggleMenu(el) {
+        el.closest(".qwerty").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
